@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Markdown Editor</h1>
+            <button id="clear-button">Clear</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="editor-wrapper">
+                <div class="toolbar">
+                    <button id="bold-btn">Bold</button>
+                    <button id="italic-btn">Italic</button>
+                    <button id="link-btn">Link</button>
+                    <button id="list-btn">List</button>
+                    <button id="code-btn">Code</button>
+                    <button id="heading1-btn">H1</button>
+                    <button id="heading2-btn">H2</button>
+                    <button id="heading3-btn">H3</button>
+                    <button id="quote-btn">Quote</button>
+                    <button id="image-btn">Image</button>
+                    <button id="table-btn">Table</button>
+                </div>
+                <textarea id="markdown-input" placeholder="Write your markdown here..." aria-label="Markdown input"></textarea>
+            </div>
+            <div id="preview" aria-label="Markdown preview"></div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Dzubayyan Ahmad
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="./function.js"></script>
+</body>
+</html>
